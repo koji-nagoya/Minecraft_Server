@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # バックアップディレクトリ
-BACKUP_DIR="/home/minecrafts/minecraft/bedrock/backups"
+BACKUP_DIR="."
 
 # バックアップ元
-TARGET_DIR="/home/minecrafts/minecraft/bedrock/server/worlds/Bedrock_Server_N/"
+TARGET_DIR="../server/worlds/Bedrock_Server_N/"
 
 # タイムスタンプを安全な形式に修正
 TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
