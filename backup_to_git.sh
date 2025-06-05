@@ -1,6 +1,6 @@
 # !/bin/bash
 set -e
-content_dir="."
+content_dir="/home/koji/minecraft/bedrock/backups"
 
 set -x
 cd "$content_dir"
