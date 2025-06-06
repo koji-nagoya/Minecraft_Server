@@ -17,7 +17,7 @@ DAILY_DIR="${BACKUP_DIR}/daily/${TIMESTAMP}.zip"
 MONTHLY_DIR="${BACKUP_DIR}/monthly/$(date +%Y-%m).zip"
 
 # 毎日バックアップの保管数
-NUM_GENS=3
+NUM_GENS=6
 
 # コマンドライン引数からバックアップモードを指定
 # 0 : 毎日バックアップ
