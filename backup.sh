@@ -4,7 +4,8 @@
 BACKUP_DIR="/home/koji/minecraft/bedrock/backups"
 
 # バックアップ元
-TARGET_DIR="/home/koji/minecraft/bedrock/server/worlds/Bedrock_Server_N/"
+TARGET_DIR="/home/koji/minecraft/bedrock/server/"
+#TARGET_DIR="/home/koji/minecraft/bedrock/server/worlds/Bedrock_Server_N/"
 
 # タイムスタンプを安全な形式に修正
 TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
