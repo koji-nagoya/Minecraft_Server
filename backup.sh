@@ -16,7 +16,7 @@ WEEKLY_DIR="${BACKUP_DIR}/weekly/$(date +%Y-%m-%d).zip" # 年と週番号
 MONTHLY_DIR="${BACKUP_DIR}/monthly/$(date +%Y-%m).zip" # 年と月
 
 # 毎日バックアップの保管数
-NUM_DAILY_GENS=6
+NUM_DAILY_GENS=24
 
 # 毎週バックアップの保管数
 NUM_WEEKLY_GENS=5
