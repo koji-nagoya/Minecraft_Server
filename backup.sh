@@ -62,6 +62,19 @@ make_zip () {
     fi
 }
 
+#git push
+git_push () {
+	set -e
+	content_dir="/home/koji/minecraft/bedrock/backups"
+	
+	set -x
+	cd "$content_dir"
+	git add -A
+	git commit -m "Commit at $(date "+%Y-%m-%d %T")" || true
+	git push -f origin main:main
+}
+
+
 # BACKUP_MODEの判定
 if [ "$BACKUP_MODE" -eq 0 ]; then
     make_zip "$DAILY_DIR" "$TARGET_DIR"
@@ -77,4 +90,7 @@ else
     echo "Usage: $0 <0 for daily backup | 1 for weekly backup | 2 for monthly backup>"
     exit 1
 fi
+
+# do git push 
+git_push
 
